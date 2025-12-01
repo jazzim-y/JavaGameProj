@@ -7,13 +7,19 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         //Music.playBackground("src\\Main\\Music.wav", true);
 
-        System.out.println("╔════════════════════════════════════════╗");
-        System.out.println("║       WELCOME TO DIGIWORLD RPG         ║");
-        System.out.println("║                                        ║");
-        System.out.println("║     A Terminal-Based Adventure Game    ║");
-        System.out.println("║         Fuse. Battle. Conquer.         ║");
-        System.out.println("╚════════════════════════════════════════╝");
         System.out.println();
+        System.out.println(GREEN+"                           WELCOME TO"+RESET);
+        System.out.println();
+
+        // Bag-o UI
+        System.out.println(CYAN +
+                "██████╗ ██╗ ██████╗ ██╗██╗    ██╗ ██████╗ ██████╗ ██╗     ██████╗ \n" +
+                "██╔══██╗██║██╔════╝ ██║██║    ██║██╔═══██╗██╔══██╗██║     ██╔══██╗\n" +
+                "██║  ██║██║██║  ███╗██║██║ █╗ ██║██║   ██║██████╔╝██║     ██║  ██║\n" +
+                "██║  ██║██║██║   ██║██║██║███╗██║██║   ██║██╔══██╗██║     ██║  ██║\n" +
+                "██████╔╝██║╚██████╔╝██║╚███╔███╔╝╚██████╔╝██║  ██║███████╗██████╔╝\n" +
+                "╚═════╝ ╚═╝ ╚═════╝ ╚═╝ ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═════╝ \n" +
+                RESET);
 
         System.out.print("Enter your champion name: ");
         String playerName = scanner.nextLine().trim();
@@ -187,5 +193,8 @@ public class Main {
 
 
     }
+    public static final String RESET  = "\u001B[0m";
+    public static final String CYAN   = "\u001B[36m";
+    public static final String GREEN = "\u001B[32m";
 
 }
